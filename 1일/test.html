@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            display: flex;
+            margin: 0px;
+
+            width: 100%;
+            height: 100%;
+
+            background-color: black;
+        }
+
+        #aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0px;
+
+            width: 100px;
+
+            background-color: rgb(169, 28, 56);
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+
+            width: 100%;
+
+            background-color: bisque;
+        }
+
+        .testboxu {
+            height: 50%;
+
+            background-color: white;
+        }
+
+        .testbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            height: 50%;
+
+            background-color: gray;
+        }
+
+        .testbox td {
+            width: 500px;
+            height: 30px;
+        }
+
+        .testbox td input {
+            width: 95%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="aside"></div>
+    <div id="container">
+        <div class="testboxu"></div>
+        <div class="testbox">
+            <table>
+                <thead>
+                    <th colspan="3">제품 문의하기</th>
+                <tbody>
+                    <tr>
+                        <th>제목</th>
+                        <td colspan="2"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>작성자</th>
+                        <td colspan="2"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>답변받을 이메일</th>
+                        <td><input type="text">@</td>
+                        <td>
+                            <select>
+                                <option>gmail.com</option>
+                                <option>naver.com</option>
+                                <option>google.com</option>
+                            </select>
+                        </td>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

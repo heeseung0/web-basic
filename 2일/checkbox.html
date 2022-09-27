@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"] + label {
+            display: inline-block;
+            
+            border: 2px solid #dbdbdb;
+            border-radius: 50%;
+
+            width: 20px;
+            height: 20px;
+
+            position: relative;
+        }
+
+        input[type="checkbox"]:checked + label::after {
+            content: "✔";
+            font-size: 15px;
+            text-align: center;
+
+            width: 20px;
+            height: 20px;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #dbdbdb;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="ch1">
+    <label for="ch1"></label>
+    <input type="checkbox" id="ch2">
+    <label for="ch2"></label>
+    <input type="checkbox" id="ch3">
+    <label for="ch3"></label>
+</body>
+
+</html>
